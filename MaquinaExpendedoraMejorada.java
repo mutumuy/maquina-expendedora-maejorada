@@ -78,7 +78,7 @@ public class MaquinaExpendedoraMejorada {
                 totalDineroAcumulado = totalDineroAcumulado + precioBillete;
                 // Reduce el balance del cliente actual dejandole seguir utilizando la maquina
                 balanceClienteActual = balanceClienteActual - precioBillete;
-                if(billeteConPremio){
+                if(billeteConPremio && numeroMaximoBilletes > 0){
                     System.out.println("##################");
                     System.out.println("# Billete de tren:");
                     System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
